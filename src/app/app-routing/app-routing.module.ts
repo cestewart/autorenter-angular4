@@ -4,6 +4,7 @@ import { RouterModule, Routes, Router, NavigationStart } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
 import { LoginComponent } from '../login/login.component';
 import { UsersComponent } from '../admin/users/users.component';
+import { BrandingComponent } from '../admin/branding/branding.component';
 import { FleetComponent } from '../fleet/fleet.component';
 import { LocationsComponent } from '../fleet/locations/locations.component';
 import { ReportsComponent } from '../fleet/reports/reports.component';
@@ -22,13 +23,12 @@ const routes: Routes = [
     path: 'admin',
     children: [
       {
-        path: '',
-        redirectTo: 'users',
-        pathMatch: 'full'
-      },
-      {
         path: 'users',
         component: UsersComponent
+      },
+      {
+        path: 'branding',
+        component: BrandingComponent
       }
     ]
   },

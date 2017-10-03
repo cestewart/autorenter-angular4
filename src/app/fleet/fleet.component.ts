@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-fleet',
@@ -8,10 +7,9 @@ import { Router } from '@angular/router';
 })
 export class FleetComponent implements OnInit {
 
-  constructor(router: Router) {
+  constructor() {
   }
 
   ngOnInit() {
   }
-
 }

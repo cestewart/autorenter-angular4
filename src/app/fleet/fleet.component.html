@@ -1,4 +1,8 @@
 <ul class="nav nav-pills nav-cvd nav-buttons">
-  <button type="button" class="btn btn-primary" [routerLink]="['../locations']">Locations</button>
-  <button type="button" class="btn btn-primary" [routerLink]="['../reports']">Reports</button>
+  <li role="presentation" routerLinkActive="active">
+    <a [routerLink]="['../locations']">Locations</a>
+  </li>
+  <li role="presentation" routerLinkActive="active">
+    <a [routerLink]="['../reports']">Reports</a>
+  </li>
 </ul>

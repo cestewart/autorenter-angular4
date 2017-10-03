@@ -14,6 +14,7 @@ import { ReportsComponent } from './fleet/reports/reports.component';
 import { EditLocationComponent } from './fleet/locations/edit-location/edit-location.component';
 import { AdminComponent } from './admin/admin.component';
 import { UsersComponent } from './admin/users/users.component';
+import { BrandingComponent } from './admin/branding/branding.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { UsersComponent } from './admin/users/users.component';
     ReportsComponent,
     EditLocationComponent,
     AdminComponent,
-    UsersComponent
+    UsersComponent,
+    BrandingComponent
   ],
   imports: [
     BrowserModule,
