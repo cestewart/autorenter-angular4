@@ -1,0 +1,38 @@
+<app-nav-bar></app-nav-bar>
+<div class="row">
+  <div class="col-xs-1 col-sm-2 col-md-4">
+  </div>
+  <div class="col-xs-10 col-sm-8 col-md-4">
+    <h2>Login</h2>
+
+    <form [formGroup]="formGroup" (ngSubmit)="login(formGroup.value)">
+      <div class="form-group row alert alert-danger" *ngIf="loginFailed">
+        <strong>The username or password is incorrect.</strong>  Please try again.
+      </div>
+
+      <div class="form-group row">
+        <label for="username" class="control-label">Username</label>
+        <input type="text" id="username" formControlName="username" class="form-control">
+      </div>
+
+      <div class="form-group row has-error text-danger" *ngIf="!formGroup.controls['username'].valid && formGroup.controls['username'].touched">
+        <strong>Username is required</strong>
+      </div>
+
+      <div class="form-group row">
+        <label for="password" class="control-label">Password</label>
+        <input type="password" id="password" formControlName="password" class="form-control">
+      </div>
+
+      <div class="form-group row has-error text-danger" *ngIf="!formGroup.controls['password'].valid && formGroup.controls['password'].touched">
+        <strong>Password is required</strong>
+      </div>
+
+      <div class="form-group row">
+        <input type="submit" class="btn btn-default" value="Submit" [disabled]="!formGroup.valid">
+      </div>
+    </form>
+  </div>
+  <div class="col-xs-1 col-sm-2 col-md-4">
+  </div>
+</div>

@@ -1,0 +1,36 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.center {
+  margin: 0 auto;
+  width: 600px;
+  text-align: center;
+}
+
+.container {
+  margin-left: 30px;
+}
+
+.container-fluid {
+  background: #fff;
+}
+
+.grid-buttons {
+  margin-bottom: 15px;
+}
+
+.list-grid {
+  width: 90%;
+  height: 500px;
+}
+
+.logo {
+  margin: 15px 15px 0 0;
+}
+
+.nav-buttons {
+  margin-bottom: 15px !important;
+}
+
+.navbar-nav>li>a {
+  color: #337ab7 !important;
+}
